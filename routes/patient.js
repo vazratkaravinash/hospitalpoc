@@ -2,7 +2,7 @@ var express = require('express');
 const patient = require('../src/patient');
 var router = express.Router();
 
-/* GET home page. */
+/* POST add patient page. */
 router.post('/addPatient', function (req, res) {
     patient.addPatient(req.body, function (error, result) {
         if (error) {
@@ -14,14 +14,14 @@ router.post('/addPatient', function (req, res) {
     })
 });
 
-/* GET home page. */
+/* GET add patient page. */
 router.get('/addPatient', function (req, res) {
     res.render('patient/addPatient.hbs', { layout: 'patientLayout' })
 });
 
 
 
-/* GET home page. */
+/* GET get patient page. */
 router.get('/getPatient', function (req, res) {
     // console.log(req.params.doctorId)
     if(req.query.patientId) {

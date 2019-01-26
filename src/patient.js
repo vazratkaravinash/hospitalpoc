@@ -32,10 +32,8 @@ function addPatient(patientInfo, cb) {
         }
         else {
             cb(errContract);
-        }
-        
+        }     
     })
-    
 }
 
 /**
@@ -70,7 +68,6 @@ function getPatient(patientId, cb) {
             cb(errContract);
         }
     });
-   
 }
 
 

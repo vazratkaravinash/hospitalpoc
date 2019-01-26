@@ -1,6 +1,6 @@
 {
     "hospitalContractAddress": {
-        "address": "0x46288656e4d113fdf781582c532134b9fbe472a3",
+        "address": "0x7318245f57a7261a415c92fb058941955ed084c9",
         "abi": [
             {
                 "constant": false,
@@ -245,6 +245,30 @@
                 "payable": false,
                 "stateMutability": "nonpayable",
                 "type": "constructor"
+            },
+            {
+                "anonymous": false,
+                "inputs": [
+                    {
+                        "indexed": false,
+                        "name": "",
+                        "type": "string"
+                    }
+                ],
+                "name": "doctorEvent",
+                "type": "event"
+            },
+            {
+                "anonymous": false,
+                "inputs": [
+                    {
+                        "indexed": false,
+                        "name": "",
+                        "type": "string"
+                    }
+                ],
+                "name": "patientEvent",
+                "type": "event"
             }
         ]
     }

@@ -2,7 +2,7 @@ var express = require('express');
 const doctor = require('../src/doctor');
 var router = express.Router();
 
-/* GET home page. */
+/* POST add doctor page. */
 router.post('/addDoctor', function(req, res) {
     doctor.addDoctor(req.body, function(error, result){
         if(error){
@@ -14,13 +14,13 @@ router.post('/addDoctor', function(req, res) {
     })
 });
 
+/* GET add doctor page. */
 router.get('/addDoctor', function(req, res) {
     res.render('doctor/addDoctor.hbs', {layout: 'doctorLayout'})
 });
 
-/* GET home page. */
+/* GET doctor details page. */
 router.get('/getDoctor', function(req, res) {
-    // console.log(req.params.doctorId)
     if(req.query.doctorId){
         doctor.getDoctor(req.query.doctorId, function(error, result){
             if(error){
@@ -34,7 +34,6 @@ router.get('/getDoctor', function(req, res) {
     else {
         res.render('doctor/getDoctor.hbs', {layout: 'doctorLayout'});
     }
-    
 });
 
 /* GET home page. */
@@ -51,9 +50,7 @@ router.get('/allPatientsOfDoctor', function(req, res) {
     }
     else {
         res.render('doctor/getPatientList.hbs', {layout: 'doctorLayout'});
-
     }
-    
 });
 
 

@@ -37,7 +37,6 @@ function addDoctor(doctorInfo, cb) {
         }
 
     })
-
 }
 
 /**
@@ -73,6 +72,11 @@ function getDoctor(doctorId, cb) {
 
 }
 
+/**
+ * This function will give all patient details consulted by doctor
+ * @param {number} doctorId 
+ * @param {callback} cb 
+ */
 function getAllPatients(doctorId, cb) {
     contractInstance.smartContractInstance(function (errContract, instance) {
         if (errContract) {
@@ -102,11 +106,8 @@ function getAllPatients(doctorId, cb) {
                             }
                         })
                     }
-
                 }
             })
-
-
         }
     });
 }

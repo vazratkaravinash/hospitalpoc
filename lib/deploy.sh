@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "Deploying Asset Contract..."
+echo "Deploying Hospital Contract..."
 node deploy.js
