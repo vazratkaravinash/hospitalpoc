@@ -1,0 +1,251 @@
+{
+    "hospitalContractAddress": {
+        "address": "0x46288656e4d113fdf781582c532134b9fbe472a3",
+        "abi": [
+            {
+                "constant": false,
+                "inputs": [
+                    {
+                        "name": "_id",
+                        "type": "uint256"
+                    },
+                    {
+                        "name": "_name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "_mail",
+                        "type": "string"
+                    },
+                    {
+                        "name": "_contact",
+                        "type": "string"
+                    },
+                    {
+                        "name": "_docAddress",
+                        "type": "string"
+                    }
+                ],
+                "name": "addDoctor",
+                "outputs": [],
+                "payable": false,
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "constant": true,
+                "inputs": [
+                    {
+                        "name": "_id",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "isDoctorAdded",
+                "outputs": [
+                    {
+                        "name": "",
+                        "type": "bool"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "constant": true,
+                "inputs": [
+                    {
+                        "name": "_id",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "getDoctor",
+                "outputs": [
+                    {
+                        "name": "",
+                        "type": "string"
+                    },
+                    {
+                        "name": "",
+                        "type": "string"
+                    },
+                    {
+                        "name": "",
+                        "type": "string"
+                    },
+                    {
+                        "name": "",
+                        "type": "string"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "constant": true,
+                "inputs": [
+                    {
+                        "name": "_id",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "getAllPatients",
+                "outputs": [
+                    {
+                        "name": "",
+                        "type": "uint256[]"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "constant": true,
+                "inputs": [
+                    {
+                        "name": "_id",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "getPatient",
+                "outputs": [
+                    {
+                        "name": "",
+                        "type": "string"
+                    },
+                    {
+                        "name": "",
+                        "type": "string"
+                    },
+                    {
+                        "name": "",
+                        "type": "string"
+                    },
+                    {
+                        "name": "",
+                        "type": "string"
+                    },
+                    {
+                        "name": "",
+                        "type": "string"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "constant": true,
+                "inputs": [],
+                "name": "patientCount",
+                "outputs": [
+                    {
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "constant": true,
+                "inputs": [],
+                "name": "ownerOfHospital",
+                "outputs": [
+                    {
+                        "name": "",
+                        "type": "address"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "constant": true,
+                "inputs": [
+                    {
+                        "name": "",
+                        "type": "uint256"
+                    },
+                    {
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "consultedPatients",
+                "outputs": [
+                    {
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "constant": false,
+                "inputs": [
+                    {
+                        "name": "_id",
+                        "type": "uint256"
+                    },
+                    {
+                        "name": "_name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "_mail",
+                        "type": "string"
+                    },
+                    {
+                        "name": "_contact",
+                        "type": "string"
+                    },
+                    {
+                        "name": "_patientAddress",
+                        "type": "string"
+                    },
+                    {
+                        "name": "_consultedDoctor",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "addPatient",
+                "outputs": [],
+                "payable": false,
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "constant": true,
+                "inputs": [
+                    {
+                        "name": "_id",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "isPatientAdded",
+                "outputs": [
+                    {
+                        "name": "",
+                        "type": "bool"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "payable": false,
+                "stateMutability": "nonpayable",
+                "type": "constructor"
+            }
+        ]
+    }
+}

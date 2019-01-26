@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>       
+
+    <h3>Search Doctor</h3>
+
+    <div class="getIncidentByID">
+        <form method="get" action="/getDoctor">
+            {{!-- Search incident --}}
+            <input type="text" id="fname" name="doctorId" placeholder="Enter Doctor Id...">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <table>
+{{#if data}}
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Address</th>
+        </tr>
+      
+        <tr>
+            <td>{{id}}</s</td> 
+            {{#each data}}
+            <td>{{this}}</td>
+            {{/each}}
+        </tr>
+        {{/if}}
+    </table>
+
+</body>
+
+</html>
